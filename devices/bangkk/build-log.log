@@ -1,0 +1,36 @@
+bash-5.3$ cd sushi_device_motorola_bangkk
+bash-5.3$ . ./envsetup.sh
+bash-5.3$ smake clean
+bash-5.3$ smake OFFICIAL=1 V=1 MAINTAINER=bangkkuser
+source ./envsetup.sh
+if ! type sushidevinfo >/dev/null 2>&1; then
+echo "ERROR: Failed to load SushiUI environment."
+exit 1
+fi
+echo "SushiUI Extended: $VERSION"
+echo "Device: $DEVICE"
+SushiUI Extended: 1.1.2
+Device: bangkk
+source ./envsetup.sh
+case "$MAINTAINER" in *[!A-Za-z0-9._[:space:]-]*) echo "E: invalid MAINTAINER" >&2; exit 1;; esac
+echo "Building 1.1.2-OFFICIAL by bangkkuser"
+rm -rf "device/nzoutput"
+mkdir -p "device/nzoutput"
+cp -a "Makefile.mod.d/." "device/nzoutput/"
+printf '%s\n' "$MODULE_PROP" > "device/nzoutput/module.prop"
+printf '%s\n' "$SUSHI_ENV" > "device/nzoutput/sushi.env"
+bash "Makefile.sh.d/apkdown.sh"
+bash "Makefile.sh.d/systemfiles.sh"
+Building 1.1.2-OFFICIAL by bangkkuser
+I: Iconify <- https://github.com/Mahmud0808/Iconify/releases/download/v8.0.0/Iconify.v8.0.0.apk
+I: XMorphClock <- https://github.com/Mahmud0808/XMorphClock/releases/download/v1.0.4/XMorphClock.v1.0.4.apk
+I: SDMaid <- https://github.com/d4rken-org/sdmaid-se/releases/download/v2.2.2-rc0/eu.darken.sdmse-v2.2.2-rc0-20202000-FOSS-RELEASE.apk
+source ./envsetup.sh
+mkdir -p "device/output"
+ZIP_NAME="SushiUI_EXT_${VERSION}_${DEVICE}.zip"
+rm -f "device/output/$ZIP_NAME"
+cd "device/nzoutput"
+zip -r "../output/$ZIP_NAME" . >/dev/null
+echo "Created device/output/$ZIP_NAME."
+Created device/output/SushiUI_EXT_1.1.2_bangkk.zip.
+bash-5.3$
