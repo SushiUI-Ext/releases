@@ -1,0 +1,64 @@
+/* _ devices.jsonc _
+This file defines the supported devices and them informations
+Licensed by MIT license - this is open for you
+This file is mainly created for softwares read it via HTTP requests: but it's not the only function
+*/
+
+[
+ {
+   "vendor": "motorola",
+   "device": "moto g84 5G",
+   "codename": "bangkk",
+   "downloads_folder": "devices/bangkk",
+   "dropped": false,
+   "maintainer": "bangkkuser",
+   "releases": true,
+   "source": "github.com/SushiUI-Ext/sushi_device_motorola_bangkk"
+ },
+
+ {
+   // too lazy to make fogos tree
+   "vendor": "motorola",
+   "device": "moto g34 5G/moto g45 5G",
+   "codename": "fogos",
+   "dropped": false,
+   "downloads_folder": null,
+   "maintainer": "bangkkuser",
+   "releases": false,
+   "source": null
+ },
+
+
+ {
+   "vendor": "motorola",
+   "device": "moto g52",
+   "codename": "rhode",
+   "downloads_folder": "devices/rhode",
+   "dropped": false,
+   "maintainer": "Kultrinhaa_, bangkkuser",
+   "releases": true,
+   "source": "github.com/SushiUI-Ext/sushi_device_motorola_rhode"
+ },
+
+ {
+   "vendor": "motorola",
+   "device": "moto g play (2016)",
+   "codename": "harpia",
+   "downloads_folder": null,
+   "dropped": false,
+    "maintainer": "bangkkuser",
+   "releases": false,
+   "source": "github.com/SushiUI-Ext/sushi_device_motorola_harpia"
+ },
+
+ {
+   "vendor": "apple",
+   "device": "iPhone 5s",
+   "codename": "n53ap",
+   "downloads_folder": null,
+   "dropped": true,
+   "maintainer": "bangkkuser",
+   "releases": false,
+   "source": "github.com/SushiUI-Ext/sushi_device_apple_iphone5s"
+ }
+]
