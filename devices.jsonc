@@ -17,7 +17,6 @@ This file is mainly created for softwares read it via HTTP requests: but it's no
  },
 
  {
-   // too lazy to make fogos tree
    "vendor": "motorola",
    "device": "moto g34 5G/moto g45 5G",
    "codename": "fogos",
@@ -25,7 +24,7 @@ This file is mainly created for softwares read it via HTTP requests: but it's no
    "downloads_folder": null,
    "maintainer": "bangkkuser",
    "releases": false,
-   "source": null
+   "source": "github.com/SushiUI-Ext/sushi_device_motorola_fogos"
  },
 
 
