@@ -11,22 +11,32 @@ This file is mainly created for softwares read it via HTTP requests: but it's no
    "codename": "bangkk",
    "downloads_folder": "devices/bangkk",
    "dropped": false,
-   "maintainer": "bangkkuser",
+   "maintainer": ["bangkkuser"],
    "releases": true,
    "source": "github.com/SushiUI-Ext/sushi_device_motorola_bangkk"
  },
 
  {
    "vendor": "motorola",
-   "device": "moto g34 5G/moto g45 5G",
+   "device": "moto g34 5G",
    "codename": "fogos",
    "dropped": false,
    "downloads_folder": null,
-   "maintainer": "bangkkuser",
+   "maintainer": ["bangkkuser"],
    "releases": false,
    "source": "github.com/SushiUI-Ext/sushi_device_motorola_fogos"
  },
 
+ {
+   "vendor": "motorola",
+   "device": "moto g45 5G",
+   "codename": "fogos2",
+   "dropped": false,
+   "downloads_folder": null,
+   "maintainer": ["bangkkuser"],
+   "releases": false,
+   "source": "github.com/SushiUI-Ext/sushi_device_motorola_fogos2"
+ },
 
  {
    "vendor": "motorola",
@@ -34,7 +44,7 @@ This file is mainly created for softwares read it via HTTP requests: but it's no
    "codename": "rhode",
    "downloads_folder": "devices/rhode",
    "dropped": false,
-   "maintainer": "Kultrinhaa_, bangkkuser",
+   "maintainer": ["Kultrinhaa_", "bangkkuser"],
    "releases": true,
    "source": "github.com/SushiUI-Ext/sushi_device_motorola_rhode"
  },
@@ -45,7 +55,7 @@ This file is mainly created for softwares read it via HTTP requests: but it's no
    "codename": "harpia",
    "downloads_folder": null,
    "dropped": false,
-    "maintainer": "bangkkuser",
+   "maintainer": ["bangkkuser"],
    "releases": false,
    "source": "github.com/SushiUI-Ext/sushi_device_motorola_harpia"
  },
@@ -56,7 +66,7 @@ This file is mainly created for softwares read it via HTTP requests: but it's no
    "codename": "n53ap",
    "downloads_folder": null,
    "dropped": true,
-   "maintainer": "bangkkuser",
+   "maintainer": ["bangkkuser"],
    "releases": false,
    "source": "github.com/SushiUI-Ext/sushi_device_apple_iphone5s"
  }
